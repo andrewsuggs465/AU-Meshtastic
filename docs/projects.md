@@ -18,7 +18,7 @@ Club builds and infrastructure nodes
 ---
 ## Alex/VXN2
 ![Node](images/VXN2_1.JPG)
-![Node](images/VXN2_2.JPG)
+![Node](images/VXN_2.JPG)
 
 ---
 Community builds
