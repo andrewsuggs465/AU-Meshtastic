@@ -1,10 +1,10 @@
 site_name: Auburn University Meshtastic
 site_description: Student-led Meshtastic, LoRa, and mesh networking at Auburn University
-site_url: https://andrewsuggs465.github.io/au-meshtastic/
+site_url: https://andrewsuggs465.github.io/
 
-repo_name: andrewssuggs465/au-meshtastic
-repo_url: https://github.com/andrewsuggs465/au-meshtastic
-edit_uri: edit/main/docs/
+repo_name: andrewsuggs465/AU-Meshtastic
+repo_url: https://github.com/andrewsuggs465/AU-Meshtastic
+edit_uri: edit/master/docs/
 
 theme:
   name: material
