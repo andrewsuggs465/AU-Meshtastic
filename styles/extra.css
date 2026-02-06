@@ -1,0 +1,30 @@
+:root {
+  --md-primary-fg-color: #00e5c0;
+  --md-accent-fg-color: #00bcd4;
+
+  --md-default-bg-color: #0b0f14;
+  --md-default-fg-color: #e6edf3;
+
+  --md-code-bg-color: #111821;
+}
+
+/* Headings */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  color: #00e5c0;
+}
+
+/* Links */
+.md-typeset a {
+  color: #00e5c0;
+}
+.md-typeset a:hover {
+  color: #66fff0;
+}
+
+/* Admonitions */
+.md-typeset .admonition {
+  border-left: 4px solid #00e5c0;
+}
+
