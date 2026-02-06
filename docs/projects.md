@@ -1,13 +1,29 @@
 # Project Hub
 
-Community builds, experiments, and infrastructure nodes.
+Club builds and infrastructure nodes
 
 ---
 
-## spectralstrider
-![Node](https://github.com/user-attachments/assets/b510d343-c675-4101-a1ec-36681779b355)
+## Andrew
+![Node](/docs/images/andrew.jpg)
 
 ---
+## Nick
+![Node](/docs/images/nick.jpg)
+
+---
+
+## Alex/VXN2
+![Node](/docs/images/VXN2_1.JPG)
+![Node](/docs/images/VXN2_2.JPG)
+
+---
+Community builds
 
 ## kealpy
-![Node](https://github.com/user-attachments/assets/7551989e-ee80-47f9-a24d-384c92b04e76)
+![Node](/docs/images/keaply.png)
+![Node](/docs/images/keaply2.png)
+![Node](/docs/images/keaply3.png)
+
+
+
