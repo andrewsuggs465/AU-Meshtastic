@@ -1,25 +1,9 @@
-# Auburn University Meshtastic Starting Guide
-
-## Index
-- [Intro](#intro)
-  - [What is Meshtastic?](#what-is-meshtastic)
-  - [How does it work?](#how-does-it-work)
-  - [Why should you get involved?](#why-should-you-get-involved)
-- [Build](#build)
-  - [Choose a configuration](#choose-a-configuration)
-  - [Order parts](#order-parts)
-  - [Assembly and Firmware Installation](#assembly)
-  - [Case](#case)
-- [Finish](#finish)
-  - [App overview & tips](#app-overview--tips)
-  - [Get involved!](#get-involved)
-  - [Project Hub](#project-hub)
-
----
+# Starting Guide
 
 ## Intro
 
 ### What Is Meshtastic?
+
 [Meshtastic](https://meshtastic.org/docs/introduction/) is an open-source, decentralized communication system that uses LoRa (Long Range) radio technology to enable encrypted, low-power digital messaging between devices known as *nodes*. Nodes can take several forms, including handheld devices with integrated displays, compact Bluetooth-enabled units that interface with smartphones, or permanently installed high-power stations designed for wide-area coverage.
 
 Meshtastic is commonly used by hobbyists, outdoor enthusiasts operating beyond cellular coverage, and for emergency or resilient communications during network outages. Its decentralized architecture and low cost make it well suited as an educational platform for students.
@@ -61,7 +45,9 @@ The ultimate goal is to spark innovation within the Auburn engineering community
 
 When choosing your Meshtastic node configuration, you can prioritize features such as connectivity (Wi-Fi, BLE), GPS, sensor integration, or display options. The choice of microcontroller (MCU) affects power consumption, performance, and expandability.
 Also consider if you want a higher-power mode with more features or a lower-power node with increased battery life but worse performance.
+
 #### 1. ESP32-Based MCUs
+
 - **Examples**
   - [Seeed Studio Wio-SX1262 + XIAO ESP32-S3](https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html) (~$10)
   - [Heltec WiFi LoRa 32 V4](https://heltec.org/project/wifi-lora-32-v4/) (~$20)
@@ -70,6 +56,7 @@ Also consider if you want a higher-power mode with more features or a lower-powe
 - **Cons:** Higher power consumption, especially with Wi-Fi enabled
 
 #### 2. nRF52840-Based MCUs
+
 - **Example**
   - [RAKWireless RAK4631 WisBlock Kit](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit) (~$30)
   - [RAKWireless WisMesh 1W Booster Starter Kit](https://store.rakwireless.com/products/wismesh-1w-booster-starter-kit)
@@ -77,6 +64,7 @@ Also consider if you want a higher-power mode with more features or a lower-powe
 - **Cons:** No Wi-Fi, limited processing power
 
 #### 3. RP2040-Based MCUs
+
 - **Example**
   - [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/)
 
@@ -84,6 +72,7 @@ Also consider if you want a higher-power mode with more features or a lower-powe
 - **Cons:** No built-in Wi-Fi, BLE, or LoRa
 
 #### 4. Linux-Based Systems
+
 - **Examples**
   - Raspberry Pi Zero 2 W, Pi 3/4
 
@@ -91,8 +80,8 @@ Also consider if you want a higher-power mode with more features or a lower-powe
 - **Cons:** Higher power consumption, less portable
 
 #### Pre-Built Nodes
-If you prefer a simpler option, consider pre-built devices such as the **Heltec V3/V4**, **WisMesh Pocket V2 / Tag**, or **T-Echo**, many of which include a case.
 
+If you prefer a simpler option, consider pre-built devices such as the **Heltec V3/V4**, **WisMesh Pocket V2 / Tag**, or **T-Echo**, many of which include a case.
 
 ## Recommendations
 
@@ -103,6 +92,7 @@ A popular and highly recommended option is the **RAK WisBlock ecosystem**. WisBl
 Another strong option is **Heltec**, which offers complete LoRa development boards with integrated **OLED displays**, **higher TX/RX power**, and a more traditional all-in-one design. These are ideal if you want a powerful node with minimal assembly.
 
 For **stationary or infrastructure mesh nodes**, consider solutions like the **[Heltec Meshtower](https://heltec.org/project/meshtower/)** or comparable RAK-based solar enclosures. These systems are designed for long-term deployment and typically include:
+
 - Solar charging
 - Battery support
 - Weatherproof enclosures
@@ -127,20 +117,20 @@ After selecting your configuration, order all required components, including:
 ## RF Connector Reference
 
 | Cable / Connector | Example |
-|------------------|---------|
+| --- | --- |
 | **U.FL** | ![SMA vs UFL](images/sma_ufl.jpg) |
 | **U.FL Board Connector** | ![U.FL Board Connector](images/ufl.jpg) |
 | **SMA vs RP-SMA Types** | ![SMA vs RP-SMA Types](images/rp-sma_sma.webp) |
 
-
-
 If you have access to the **makerspace or e-shop**, most components are available on campus. Many parts are also stocked in the **SPARC lab**.
 
-You will likely need to assemble a **custom power harness**. Before connecting the battery, **double-check polarity** to avoid permanent damage. You should wire the harness together with the battery before plugging it in to avoid damage to the battery, the microcontroller, or yourself.
+You will likely need to assemble a **custom power harness**. Before connecting the battery, **double-check polarity** to avoid permanent damage.
 
-To reduce or eliminate costs, consider joining the **Student Projects and Research Committee (SPARC)**—many projects like this can be fully funded.  
- - [SPARC](http://sparc.eng.auburn.edu/)
+To reduce or eliminate costs, consider joining the **Student Projects and Research Committee (SPARC)**—many projects like this can be fully funded.
 
+**Research & Development:**
+
+- [SPARC](http://sparc.eng.auburn.edu/)
 
 ---
 
@@ -162,16 +152,12 @@ For firmware installation, the **web flasher is strongly recommended** (Chromium
 We provide a [**community-designed case**](https://github.com/SPARC-Auburn/MESH_Echo_Node) for the **WisBlock Meshtastic Starter Kit**, and many additional designs are available on [Printables](https://www.printables.com/tag/meshtastic).
 
 If you are new to CAD:
-- Download an existing case design
-- Focus on basic slicing and printing
 
-Recommended tools:
 - **Bambu Studio** or **PrusaSlicer**
-- Makerspace self-service station (after required training)
 
-Alternatively:
+If you prefer a simpler workflow:
+
 - Submit a **prototype shop print request**
-- Contact someone in the **SPARC lab** for assistance
 
 ---
 
@@ -179,28 +165,31 @@ Alternatively:
 
 > ⚠️ **Important:** Never power on a LoRa radio without an antenna attached.
 
-### App overview & tips
+### App Overview & Tips
 
 | Node Discovery | Conversations |
-|---------------|---------------|
+| --- | --- |
 | ![Node Discovery](images/meshtastic_nodes.png) | ![Conversations](images/meshtastic_chat.png) |
 
 | Map View | Node Settings |
-|---------|---------------|
+| --- | --- |
 | ![Map View](images/meshtastic_map.png) | ![Node Settings](images/meshtastic_config.png) |
 
-## Install the Meshtastic app:
+## Install the Meshtastic App
+
 - **Android:** Google Play / F-Droid
 - **iOS:** Apple App Store
 - **Linux:** [Meshtasticd](https://meshtastic.org/docs/hardware/devices/linux-native-hardware/)
+
 [Meshtastic Site Planner](https://site.meshtastic.org/)
+
 Power on your node *with the antenna attached*, then connect via Bluetooth or USB.
 
-**Tips**
+### Tips
+
 - Rename your node
 - Verify region and frequency (FCC compliance)
 - Confirm radio preset (Long/Fast recommended)
 - Disable GPS if not needed to save power
 
 ---
-

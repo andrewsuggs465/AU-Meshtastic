@@ -1,29 +1,28 @@
 # Project Hub
 
-Club builds and infrastructure nodes
+## Club Builds and Infrastructure Nodes
 
----
+### Andrew
 
-## Andrew
 ![Node](images/andrew.jpg)
 
----
-## Nick
+### Nick
+
 ![Node](images/nick.jpg)
 
----
-## Jacob
+### Jacob
+
 ![Node](images/Jacob.jpg)
 
----
-## Alex/VXN2
+### Alex/VXN2
+
 ![Node](images/VXN2_1.JPG)
 ![Node](images/VXN_2.JPG)
 
----
-Community builds
+## Community Builds
 
-## kealpy
+### kealpy
+
 ![Node](images/Kealpy.jpg)
 ![Node](images/kealpy2.jpg)
 ![Node](images/kealpy3.jpg)
