@@ -1,33 +1,22 @@
-# University Meshtastic Club
+# Auburn University Meshtastic
 
-**Decentralized. Off-grid. Student-driven.**
+📡 **Decentralized. Off-grid. Student-driven.**
 
-We’re a student organization focused on **Meshtastic**, **LoRa radios**, and **resilient mesh communication networks**.  
-Our mission is to explore off-grid messaging, emergency comms, and open-source wireless tech.
+Welcome to Auburn University’s Meshtastic community.  
+We explore **LoRa**, **mesh networking**, **emergency communications**, and **open-source hardware**.
 
 ---
+
+## Get Started
+➡️ Read the **[Auburn University Meshtastic Starting Guide](starting-guide.md)**
 
 ## What We Do
-
-- 📡 Build Meshtastic nodes
-- 🌐 Deploy campus & regional mesh networks
-- 🛠 Experiment with antennas, firmware, and enclosures
-- 📚 Teach LoRa fundamentals & RF theory
-- 🚨 Explore emergency and disaster communication
-
----
-
-## Why Meshtastic?
-
-> Meshtastic enables secure, decentralized communication using low-power radios — no internet required.
-
-Perfect for:
-- Emergency preparedness
-- Outdoor adventures
-- Research & experimentation
-- Community networks
+- Build Meshtastic nodes
+- Deploy regional mesh coverage
+- Learn RF & embedded systems
+- Support emergency comms
 
 ---
 
 !!! tip
-    New to Meshtastic? No experience required. We’ll help you get started.
+    No experience required — we’ll help you build your first node.

@@ -1,15 +1,12 @@
 # Resources
 
-## Official Links
-- [Meshtastic.org](https://meshtastic.org)
-- [Meshtastic GitHub](https://github.com/meshtastic)
+- [Meshtastic Documentation](https://meshtastic.org/docs/)
+- [Meshtastic Site Planner](https://site.meshtastic.org/)
+- [Worldwide Mesh Map](https://meshmap.net/)
+- [ALMesh](https://almesh.net)
 
-## Learning
-- LoRa & RF fundamentals
-- Embedded development
-- Mesh networking concepts
-
-## Recommended Hardware
-- LilyGO T-Beam
-- Heltec V3
-- RAK WisBlock
+## Communities
+- AU Mesh Discord
+- ALMesh Discord
+- Birmingham Mesh
+- Meshtastic Reddit

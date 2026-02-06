@@ -1,15 +1,13 @@
-# Projects
+# Project Hub
 
-## Campus Mesh Network
-Deploying a persistent LoRa mesh across campus buildings.
+Community builds, experiments, and infrastructure nodes.
 
-## Emergency Comms Kit
-Portable go-box with battery, solar, and multiple nodes.
+---
 
-## Custom Node Enclosures
-Weather-resistant, 3D-printed cases.
+## spectralstrider
+![Node](https://github.com/user-attachments/assets/b510d343-c675-4101-a1ec-36681779b355)
 
-## Research & Experiments
-- Range testing
-- Antenna optimization
-- Power consumption analysis
+---
+
+## kealpy
+![Node](https://github.com/user-attachments/assets/7551989e-ee80-47f9-a24d-384c92b04e76)
