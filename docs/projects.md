@@ -24,6 +24,3 @@ Community builds
 ![Node](/docs/images/keaply.png)
 ![Node](/docs/images/keaply2.png)
 ![Node](/docs/images/keaply3.png)
-
-
-

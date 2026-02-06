@@ -5,7 +5,7 @@ location: SPARC Lab (MEB 123)
 organizer: spectralstrider
 ---
 
-# 2026-02-12 — Weekly Build Night
+# 2026-02-12 — Weekly Build Night *EXAMPLE*
 
 - **Time:** 18:00 — 20:00
 - **Location:** SPARC Lab (MEB 123)

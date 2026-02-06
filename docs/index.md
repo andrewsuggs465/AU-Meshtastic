@@ -2,8 +2,9 @@
 
 📡 **Decentralized. Off-grid. Student-driven.**
 
-Welcome to Auburn University’s Meshtastic community.  
-We explore **LoRa**, **mesh networking**, **emergency communications**, and **open-source hardware**.
+Welcome to Auburn University’s Meshtastic community.
+Our main goal is to promote project-based learning through meshtastic and related technologies. 
+We explore **LoRa**, **mesh networking**, and **open-source hardware**.
 
 ---
 
@@ -14,7 +15,6 @@ We explore **LoRa**, **mesh networking**, **emergency communications**, and **op
 - Build Meshtastic nodes
 - Deploy regional mesh coverage
 - Learn RF & embedded systems
-- Support emergency comms
 
 ---
 

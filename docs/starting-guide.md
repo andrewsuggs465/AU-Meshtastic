@@ -1,7 +1,4 @@
 # Auburn University Meshtastic Starting Guide
-<figure>
-    <img src="https://github.com/user-attachments/assets/b5a46f6b-8729-4991-baca-188ea8220914" width="400" height="400" alt="JPEG_auMesh">
-</figure>
 
 ## Index
 - [Intro](#intro)
@@ -27,7 +24,7 @@
 
 Meshtastic is commonly used by hobbyists, outdoor enthusiasts operating beyond cellular coverage, and for emergency or resilient communications during network outages. Its decentralized architecture and low cost make it well suited as an educational platform for students.
 
-![Meshtastic Diagram Visual](https://meshtastic.org/assets/images/lora-topology-2-c80684f1eafdf2a71fbaf26e494fb26d.webp)
+![Meshtastic Diagram Visual](/docs/images/lora-topology.webp)
 
 - [SE Mesh Network](https://meshinfo.almesh.net/map.html)
 - [Worldwide Mesh Map](https://meshmap.net/)
@@ -131,9 +128,9 @@ After selecting your configuration, order all required components, including:
 
 | Cable / Connector | Example |
 |------------------|---------|
-| **U.FL / MHF4 Pigtail** | <img src="https://github.com/user-attachments/assets/f7d47bec-d5f6-4d33-ae7c-751608752ef1" width="400"> |
-| **U.FL Board Connector** | <img src="https://github.com/user-attachments/assets/6cf4d205-42d7-4504-a027-e5d05d883187" width="400"> |
-| **SMA vs RP-SMA Types** | <img src="https://github.com/user-attachments/assets/882abcb6-9981-4f1a-b0b3-15308e06c7d7" width="500"> |
+| **U.FL** | ![SMA vs UFL](/docs/images/sma_ufl.png) |
+| **U.FL Board Connector** | ![U.FL Board Connector](/docs/images/ufl_board_connector.png) |
+| **SMA vs RP-SMA Types** | ![SMA vs RP-SMA Types](/docs/images/sma_rpsma_types.png) |
 
 
 
@@ -186,11 +183,11 @@ Alternatively:
 
 | Node Discovery | Conversations |
 |---------------|---------------|
-| ![Node Discovery](https://github.com/user-attachments/assets/1c851df6-a3ce-436b-beda-08740e145289) | ![Conversations](https://github.com/user-attachments/assets/c5301803-c47d-48bc-8fab-f305b6b75ca6) |
+| ![Node Discovery](docs/images/meshtastic_nodes.png) | ![Conversations](docs/images/meshtastic_chat.png) |
 
 | Map View | Node Settings |
 |---------|---------------|
-| ![Map View](https://github.com/user-attachments/assets/7baf5a7e-6fc5-42ea-9f0e-1a3ea84599e9) | ![Node Settings](https://github.com/user-attachments/assets/e2a8bfdd-8a08-4c0f-906a-36b5db98a0ef) |
+| ![Map View](docs/images/meshtastic_map.png) | ![Node Settings](docs/images/meshtastic_settings.png) |
 
 Install the Meshtastic app:
 - **Android:** Google Play / F-Droid
