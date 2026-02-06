@@ -5,7 +5,6 @@
 Welcome to Auburn University’s Meshtastic community.
 Our main goal is to promote project-based learning through meshtastic and related technologies. 
 We explore **LoRa**, **mesh networking**, and **open-source hardware**.
-
 ---
 
 ## Get Started
@@ -15,6 +14,8 @@ We explore **LoRa**, **mesh networking**, and **open-source hardware**.
 - Build Meshtastic nodes
 - Deploy regional mesh coverage
 - Learn RF & embedded systems
+- Explore firmware, embedded Linux, and networking
+- Collaborate on student-led projects
 
 ---
 
