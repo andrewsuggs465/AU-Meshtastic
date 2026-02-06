@@ -24,7 +24,7 @@
 
 Meshtastic is commonly used by hobbyists, outdoor enthusiasts operating beyond cellular coverage, and for emergency or resilient communications during network outages. Its decentralized architecture and low cost make it well suited as an educational platform for students.
 
-![Meshtastic Diagram Visual](/docs/images/lora-topology.webp)
+![Meshtastic Diagram Visual](/images/lora-topology.webp)
 
 - [SE Mesh Network](https://meshinfo.almesh.net/map.html)
 - [Worldwide Mesh Map](https://meshmap.net/)
@@ -128,9 +128,9 @@ After selecting your configuration, order all required components, including:
 
 | Cable / Connector | Example |
 |------------------|---------|
-| **U.FL** | ![SMA vs UFL](/docs/images/sma_ufl.png) |
-| **U.FL Board Connector** | ![U.FL Board Connector](/docs/images/ufl_board_connector.png) |
-| **SMA vs RP-SMA Types** | ![SMA vs RP-SMA Types](/docs/images/sma_rpsma_types.png) |
+| **U.FL** | ![SMA vs UFL](/images/sma_ufl.png) |
+| **U.FL Board Connector** | ![U.FL Board Connector](/images/ufl_board_connector.png) |
+| **SMA vs RP-SMA Types** | ![SMA vs RP-SMA Types](/images/sma_rpsma_types.png) |
 
 
 
@@ -183,11 +183,11 @@ Alternatively:
 
 | Node Discovery | Conversations |
 |---------------|---------------|
-| ![Node Discovery](docs/images/meshtastic_nodes.png) | ![Conversations](docs/images/meshtastic_chat.png) |
+| ![Node Discovery](/images/meshtastic_nodes.png) | ![Conversations](/images/meshtastic_chat.png) |
 
 | Map View | Node Settings |
 |---------|---------------|
-| ![Map View](docs/images/meshtastic_map.png) | ![Node Settings](docs/images/meshtastic_settings.png) |
+| ![Map View](/images/meshtastic_map.png) | ![Node Settings](/images/meshtastic_settings.png) |
 
 Install the Meshtastic app:
 - **Android:** Google Play / F-Droid
