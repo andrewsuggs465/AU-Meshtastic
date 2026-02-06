@@ -189,7 +189,7 @@ Alternatively:
 |---------|---------------|
 | ![Map View](images/meshtastic_map.png) | ![Node Settings](images/meshtastic_config.png) |
 
-Install the Meshtastic app:
+## Install the Meshtastic app:
 - **Android:** Google Play / F-Droid
 - **iOS:** Apple App Store
 - **Linux:** [Meshtasticd](https://meshtastic.org/docs/hardware/devices/linux-native-hardware/)

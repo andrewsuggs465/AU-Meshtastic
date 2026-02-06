@@ -1,21 +1,37 @@
 # About the Club
 
-The University Meshtastic Club is an interdisciplinary group of students interested in:
+The University Meshtastic Club is an interdisciplinary student organizatiion centered around learning by building.
 
-- Electrical engineering
-- Computer science
-- RF & embedded systems
-- Open-source hardware
+### Our members come from:
+- Electrical and Computer engineering
+- Computer science and Software engineering
+- Mechanical engineering
+- And non-engineering majors
 
 We welcome **all majors** and **all experience levels**.
 
 ---
 
 ## Project-Based Learning
-The main goal of the Auburn University Meshtastic club is simply to promote learning through Meshtastic. Although the club is centered around this technology, we want to be a basis for students to explore further
-learniing opportunities such as research and group projects.
-We aim to partner with professors and other clubs to accomplish their goals as well as build a positively constructive learning environment.
+Our primary goal is **learning through doing**.
+
+### Our club meetings look like this:
+- **Meetings**: Building functional hardware and discussing upcoming technlologies and projects
+- **Work**: Deploying nodes in the field and designing systems to support them
+- **Outreach**: We hope to inspire other like-minded students to pursue their interests and get involved with meshtastic
+
+### We aim to support:
+- Independent student projects
+- Research collaboration with faculty
+- Cross-club technical partnerships
 
 ## Community Outreach
-We plan to do tabling on the Haley Concourse and E-day. Additionally, doing outreach in the local Auburn/Opelika area to teach and educate people about Meshtastic is a long-term goal
+We're committed to sharing what we learn beyond the club.
+
+### Our planned outreach includes:
+-  Tabling on Haley Concourse and E-day
+- Public demos in Auburn/Opelika
+- Intro workshops on radio and mesh networking
+
+Long-term, we aim to build a regional, community-supported mesh network that anyone can learn from or participate in.
 
