@@ -23,7 +23,7 @@ theme:
       primary: custom
       accent: custom
   font:
-    text: Inter
+    text: Outfit
     code: JetBrains Mono
 
 extra_css:
