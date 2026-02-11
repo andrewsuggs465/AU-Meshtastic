@@ -10,6 +10,8 @@ Welcome to Auburn University's Meshtastic community. Our main goal is to promote
 
 ➡️ Read the **[Auburn University Meshtastic Starting Guide](starting-guide.md)**
 
+[![Join Discord](https://img.shields.io/badge/Discord-Join%20Chat-5865F2?logo=discord&logoColor=white)](https://discord.gg/PmmSCSw7Dn)
+
 ## What We Do
 
 - Build Meshtastic nodes

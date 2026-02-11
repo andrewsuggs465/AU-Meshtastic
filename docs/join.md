@@ -19,7 +19,7 @@ We’re a fast-growing group of students who enjoy building, experimenting, and 
 
 ## How to Get Involved
 
-- 💬 Join our Discord
+- 💬 Join our [Discord](https://discord.gg/PmmSCSw7Dn)!
 - 📅 Come to a meeting or build night
 - 📝 Sign up through AUInvolve
 - 🛠️ Build your first Meshtastic node
