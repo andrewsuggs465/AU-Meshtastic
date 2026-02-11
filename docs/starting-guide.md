@@ -8,7 +8,7 @@
 
 Meshtastic is commonly used by hobbyists, outdoor enthusiasts operating beyond cellular coverage, and for emergency or resilient communications during network outages. Its decentralized architecture and low cost make it well suited as an educational platform for students.
 
-![Meshtastic Diagram Visual](images/lora-topology.webp)
+![Meshtastic Diagram Visual](assets/images/lora-topology.webp)
 
 - [SE Mesh Network](https://meshinfo.almesh.net/map.html)
 - [Worldwide Mesh Map](https://meshmap.net/)
@@ -118,9 +118,9 @@ After selecting your configuration, order all required components, including:
 
 | Cable / Connector | Example |
 | --- | --- |
-| **U.FL** | ![SMA vs UFL](images/sma_ufl.jpg) |
-| **U.FL Board Connector** | ![U.FL Board Connector](images/ufl.jpg) |
-| **SMA vs RP-SMA Types** | ![SMA vs RP-SMA Types](images/rp-sma_sma.webp) |
+| **U.FL** | ![SMA vs UFL](assets/images/sma_ufl.jpg) |
+| **U.FL Board Connector** | ![U.FL Board Connector](assets/images/ufl.jpg) |
+| **SMA vs RP-SMA Types** | ![SMA vs RP-SMA Types](assets/images/rp-sma_sma.webp) |
 
 If you have access to the **makerspace or e-shop**, most components are available on campus. Many parts are also stocked in the **SPARC lab**.
 
@@ -169,11 +169,11 @@ If you prefer a simpler workflow:
 
 | Node Discovery | Conversations |
 | --- | --- |
-| ![Node Discovery](images/meshtastic_nodes.png) | ![Conversations](images/meshtastic_chat.png) |
+| ![Node Discovery](assets/images/meshtastic_nodes.png) | ![Conversations](assets/images/meshtastic_chat.png) |
 
 | Map View | Node Settings |
 | --- | --- |
-| ![Map View](images/meshtastic_map.png) | ![Node Settings](images/meshtastic_config.png) |
+| ![Map View](assets/images/meshtastic_map.png) | ![Node Settings](assets/images/meshtastic_config.png) |
 
 ## Install the Meshtastic App
 

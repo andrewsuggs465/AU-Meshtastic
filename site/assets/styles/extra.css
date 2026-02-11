@@ -98,9 +98,35 @@
   vertical-align: middle;
 }
 
-@media (min-width: 960px) {
+/* ── sidebar github container ── */
+.md-nav__source {
+  background-color: var(--md-primary-fg-color);
+}
+
+/* ── sidebar title ── */
+.md-nav__title {
+  display: flex;           
+  align-items: center;     
+  flex-wrap: wrap;         
+}
+
+/* ── sidebar logo ── */
+.md-nav__title a.md-logo {
+  margin-right: 0.5rem;   
+  flex-shrink: 0;          
+}
+
+/* ── sidebar title ── */
+.md-nav__title > text {
+  white-space: normal;     
+  word-break: break-word;  
+  overflow-wrap: anywhere; 
+}
+
+
+@media (min-width: 40px) {
   .md-header .md-logo :is(img, svg) {
-    height: 64px;
+    height: 48px;
   }
 }
 

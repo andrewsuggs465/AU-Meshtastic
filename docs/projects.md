@@ -4,25 +4,25 @@
 
 ### Andrew
 
-![Node](images/andrew.jpg)
+![Node](assets/images/andrew.jpg)
 
 ### Nick
 
-![Node](images/nick.jpg)
+![Node](assets/images/nick.jpg)
 
 ### Jacob
 
-![Node](images/Jacob.jpg)
+![Node](assets/images/Jacob.jpg)
 
 ### Alex/VXN2
 
-![Node](images/VXN2_1.JPG)
-![Node](images/VXN_2.JPG)
+![Node](assets/images/VXN2_1.JPG)
+![Node](assets/images/VXN_2.JPG)
 
 ## Community Builds
 
 ### kealpy
 
-![Node](images/Kealpy.jpg)
-![Node](images/kealpy2.jpg)
-![Node](images/kealpy3.jpg)
+![Node](assets/images/Kealpy.jpg)
+![Node](assets/images/kealpy2.jpg)
+![Node](assets/images/kealpy3.jpg)

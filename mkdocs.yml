@@ -8,8 +8,8 @@ edit_uri: edit/master/docs/
 
 theme:
   name: material
-  logo: images/SVG_au.svg
-  favicon: images/SVG_au.svg
+  logo: assets/logos/SVG_auMesh.svg
+  favicon: assets/logos/SVG_au.svg
   language: en
   features:
     - navigation.instant
@@ -27,7 +27,7 @@ theme:
     code: JetBrains Mono
 
 extra_css:
-  - styles/extra.css
+  - assets/styles/extra.css
 
 markdown_extensions:
   - admonition
@@ -43,11 +43,11 @@ nav:
   - About: about.md
   - Join: join.md
   - Events:
-      - Events Home: events/index.md
-      - 2026-03-02 — Monthly Meeting: events/2026-03-02-monthly-meeting.md
-      - 2026-xx-xx — Build Night: events/2026-xx-xx-build-night.md
+      - Events Home: assets/events/index.md
+      - 2026-03-02 — Monthly Meeting: assets/events/2026-03-02-monthly-meeting.md
+      - 2026-xx-xx — Build Night: assets/events/2026-xx-xx-build-night.md
       - Previous:
-          - 2026-02-02 — Monthly Meeting: events/2026-02-02-monthly-meeting.md
+          - 2026-02-02 — Monthly Meeting: assets/events/2026-02-02-monthly-meeting.md
   - Resources: resources.md
   - Project Hub: projects.md
   - Uploads: https://auburn.box.com/s/d4jgsr0w9i4rygxcakc5eockw36nfeiw
