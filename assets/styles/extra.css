@@ -124,9 +124,9 @@
 }
 
 
-@media (min-width: 960px) {
+@media (min-width: 40px) {
   .md-header .md-logo :is(img, svg) {
-    height: 64px;
+    height: 48px;
   }
 }
 
