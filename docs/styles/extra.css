@@ -1,53 +1,138 @@
+/* ── tokens ── */
 :root {
   --md-primary-fg-color: #00e5c0;
   --md-accent-fg-color: #00bcd4;
-
   --md-default-bg-color: #0b0f14;
   --md-default-fg-color: #e6edf3;
-
   --md-code-bg-color: #111821;
+
+  --glow: 0 0 24px oklch(75% 0.14 175 / 0.15);
+  scroll-behavior: smooth;
 }
 
-/* Headings */
-.md-typeset h1,
-.md-typeset h2,
-.md-typeset h3 {
-  color: #00e5c0;
+/* ── selection ── */
+::selection {
+  background: oklch(75% 0.14 175 / 0.35);
+  color: #fff;
 }
 
-/* Links */
+/* ── focus ── */
+:focus-visible {
+  outline: 2px solid var(--md-primary-fg-color);
+  outline-offset: 3px;
+}
+
+/* ── headings ── */
+.md-typeset :is(h1, h2, h3) {
+  color: var(--md-primary-fg-color);
+  text-wrap: balance;
+}
+
+/* ── links: animated underline ── */
 .md-typeset a {
-  color: #00e5c0;
+  color: var(--md-primary-fg-color);
+  text-decoration: none;
+  background-image: linear-gradient(
+    var(--md-primary-fg-color),
+    var(--md-primary-fg-color)
+  );
+  background-size: 0% 1px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease, color 0.2s ease;
 }
+
 .md-typeset a:hover {
-  color: #66fff0;
+  color: color-mix(in oklch, var(--md-primary-fg-color), white 30%);
+  background-size: 100% 1px;
 }
 
-/* Admonitions */
+/* ── admonitions ── */
 .md-typeset .admonition {
-  border-left: 4px solid #00e5c0;
+  border-left: 4px solid var(--md-primary-fg-color);
 }
 
-/* Increase header logo size (responsive) */
-.md-header .md-logo img,
-.md-header .md-logo svg {
+/* ── horizontal rules: gradient fade ── */
+.md-typeset hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--md-primary-fg-color),
+    transparent
+  );
+  opacity: 0.3;
+}
+
+/* ── code blocks: glow on hover via :has() ── */
+.md-typeset pre:has(code) {
+  transition: box-shadow 0.3s ease;
+}
+
+.md-typeset pre:has(code):hover {
+  box-shadow: var(--glow);
+}
+
+/* ── project images: clip-path + hover ── */
+.md-content img[alt="Node"] {
+  clip-path: inset(0 round 10px);
+  transition: clip-path 0.4s ease, filter 0.3s ease;
+}
+
+.md-content img[alt="Node"]:hover {
+  clip-path: inset(3% round 6px);
+  filter: brightness(1.1);
+}
+
+/* ── all images: baseline radius ── */
+.md-typeset img {
+  border-radius: 6px;
+}
+
+/* ── header logo (responsive) ── */
+.md-header .md-logo :is(img, svg) {
   height: 48px;
   width: auto;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 @media (min-width: 960px) {
-  .md-header .md-logo img,
-  .md-header .md-logo svg {
+  .md-header .md-logo :is(img, svg) {
     height: 64px;
   }
 }
 
-/* Improve spacing so larger logo doesn't crowd nav */
 .md-header .md-header__inner {
   align-items: center;
 }
 
-/* Fallback: scale any small logo SVGs via transform */
-.md-header .md-logo svg { display: inline-block; vertical-align: middle; }
+/* ── scrollbar ── */
+@supports selector(::-webkit-scrollbar) {
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
 
+  ::-webkit-scrollbar-track {
+    background: var(--md-default-bg-color);
+  }
 
+  ::-webkit-scrollbar-thumb {
+    background: oklch(40% 0.06 175);
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--md-primary-fg-color);
+  }
+}
+
+/* ── tables: subtle hover ── */
+.md-typeset table:not([class]) tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+.md-typeset table:not([class]) tbody tr:hover {
+  background-color: oklch(20% 0.02 175 / 0.5);
+}
