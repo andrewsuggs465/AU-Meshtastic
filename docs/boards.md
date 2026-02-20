@@ -13,13 +13,13 @@ WiFi LoRa 32 (V4), ESP32S3 + SX1262 LoRa Node, Meshtastic and LoRaWAN Compatible
 ![HeltecV4](assets/images/Heltec.png){: width="400"}
 
 ## Option C: Lilygo T-Beam
+
 Lilygo T-Beam Meshtastic
 
 ![Lilygo](assets/images/Lilygo.png){: width="400" }
 
-
-
 ## Full Comparison
+
 | Board | WisBlock Meshtastic Starter Kit | Heltec V4 | Lilygo T-Beam |
 | :------- | :----------- | :-------- | :------------ |
 | Full Name | RAK4631 Core module + RAK19007 Base Board + RAK1921 OLED Display | WiFi LoRa 32 (V4), ESP32S3 + SX1262 LoRa Node, Meshtastic and LoRaWAN Compatible | Lilygo T-Beam Meshtastic |

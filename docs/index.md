@@ -10,7 +10,7 @@ Welcome to Auburn University's Meshtastic community. Our main goal is to promote
 
 ➡️ Read the **[Auburn University Meshtastic Starting Guide](starting-guide.md)**
 
-➡️ Join our **[Join Discord](https://discord.com/api/guilds/1453918513797271687/widget.json)
+➡️ Join our **[Join Discord](https://discord.com/api/guilds/1453918513797271687/widget.json)**
 
 ## What We Do
 
