@@ -26,3 +26,7 @@
 ![Node](assets/images/Kealpy.jpg)
 ![Node](assets/images/kealpy2.jpg)
 ![Node](assets/images/kealpy3.jpg)
+
+### Jerry (KB9V)
+
+![Node](assets/images/Jerry_KB9V.jpg)

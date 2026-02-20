@@ -39,9 +39,10 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Starting Guide: starting-guide.md
   - About: about.md
   - Join: join.md
+  - Starting Guide: starting-guide.md
+  - Boards: boards.md
   - Events:
       - Events Home: assets/events/index.md
       - 2026-03-02 — Monthly Meeting: assets/events/2026-03-02-monthly-meeting.md
