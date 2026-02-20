@@ -630,6 +630,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#decision-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decision Flowchart
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#full-comparison" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1020,6 +1031,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#decision-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decision Flowchart
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#full-comparison" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1053,13 +1075,35 @@
 <h1 id="buid-day-board-options">Buid Day Board Options</h1>
 <h2 id="option-a-wisblock-meshtastic-starter-kit">Option A: Wisblock Meshtastic Starter Kit</h2>
 <p>RAK4631 Core module + RAK19007 Base Board + RAK1921 OLED Display</p>
-<p><img alt="RAK" src="../assets/images/Wisblock.png" width="400" /></p>
+<p><img alt="RAK" src="../assets/images/Wisblock.png" width="300" /></p>
 <h2 id="option-b-heltec-v4">Option B: Heltec V4</h2>
-<p>WiFi LoRa 32 (V4), ESP32S3 + SX1262 LoRa Node, Meshtastic and LoRaWAN Compatible</p>
-<p><img alt="HeltecV4" src="../assets/images/Heltec.png" width="400" /></p>
+<p>WiFi LoRa 32 (V4), ESP32S3 + SX1262 LoRa Node, Meshtastic and LoRaWAN Compatible + L76K GNSS Module</p>
+<p><img alt="HeltecV4" src="../assets/images/Heltec.png" width="300" /></p>
 <h2 id="option-c-lilygo-t-beam">Option C: Lilygo T-Beam</h2>
 <p>Lilygo T-Beam Meshtastic</p>
-<p><img alt="Lilygo" src="../assets/images/Lilygo.png" width="400" /></p>
+<p><img alt="Lilygo" src="../assets/images/Lilygo.png" width="300" /></p>
+<h2 id="decision-flowchart">Decision Flowchart</h2>
+<pre class="mermaid"><code>graph LR
+  A(Which feature do I care most about?);
+  A --&gt; B[GPS + Wifi];
+  B ----&gt;|and| I[High Output Power]
+  I ------&gt; G
+
+  B ----&gt;|and| J[More Battery Life]
+  J ------&gt; H
+
+
+
+
+  A --&gt; C[Long Battery Life];
+  C ------&gt; F{Wisblock}
+
+  A --&gt; D[High Ouptut Power];
+  D ------&gt; G{Heltec V4}
+
+  A --&gt; E[Small Form Factor];
+  E ------&gt; H{Lilygo T-Beam}
+</code></pre>
 <h2 id="full-comparison">Full Comparison</h2>
 <table>
 <thead>
@@ -1074,7 +1118,7 @@
 <tr>
 <td style="text-align: left;">Full Name</td>
 <td style="text-align: left;">RAK4631 Core module + RAK19007 Base Board + RAK1921 OLED Display</td>
-<td style="text-align: left;">WiFi LoRa 32 (V4), ESP32S3 + SX1262 LoRa Node, Meshtastic and LoRaWAN Compatible</td>
+<td style="text-align: left;">WiFi LoRa 32 (V4), ESP32S3 + SX1262 LoRa Node, Meshtastic and LoRaWAN Compatible + L76K GNSS Module</td>
 <td style="text-align: left;">Lilygo T-Beam Meshtastic</td>
 </tr>
 <tr>
@@ -1084,7 +1128,7 @@
 <td style="text-align: left;"><a href="https://lilygo.cc/en-us/products/t-beam-meshtastic?variant=45348463280309">Lilygo T-beam</a></td>
 </tr>
 <tr>
-<td style="text-align: left;">Price</td>
+<td style="text-align: left;">Price (Will be covered by club)</td>
 <td style="text-align: left;">$30.99</td>
 <td style="text-align: left;">$27.90</td>
 <td style="text-align: left;">$33.15</td>
@@ -1108,7 +1152,7 @@
 <td style="text-align: left;">~100mW (20dBm)</td>
 </tr>
 <tr>
-<td style="text-align: left;">Stock GPS</td>
+<td style="text-align: left;">Includes GPS</td>
 <td style="text-align: left;">No</td>
 <td style="text-align: left;">Yes (external module)</td>
 <td style="text-align: left;">Yes</td>
@@ -1129,7 +1173,7 @@
 <td style="text-align: left;">Est. Battery Life (3000mAh)</td>
 <td style="text-align: left;">~278 hrs (11 days)</td>
 <td style="text-align: left;">~10.7 hrs</td>
-<td style="text-align: left;">~18.75 hrs</td>
+<td style="text-align: left;">~18.75 hrs <em>Note nust use (one) 18650 cell</em></td>
 </tr>
 </tbody>
 </table>
