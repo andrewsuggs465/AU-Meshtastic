@@ -6,7 +6,6 @@ RAK4631 Core module + RAK19007 Base Board + RAK1921 OLED Display
 
 ![RAK](assets/images/Wisblock.png){: width="300" }
 
-
 ## Option B: Heltec V4
 
 WiFi LoRa 32 (V4), ESP32S3 + SX1262 LoRa Node, Meshtastic and LoRaWAN Compatible + L76K GNSS Module
@@ -14,10 +13,10 @@ WiFi LoRa 32 (V4), ESP32S3 + SX1262 LoRa Node, Meshtastic and LoRaWAN Compatible
 ![HeltecV4](assets/images/Heltec.png){: width="300"}
 
 ## Option C: Lilygo T-Beam
+
 Lilygo T-Beam Meshtastic
 
 ![Lilygo](assets/images/Lilygo.png){: width="300" }
-
 
 ## Decision Flowchart
 
@@ -45,9 +44,8 @@ graph LR
 
 ```
 
-
-
 ## Full Comparison
+
 | Board | WisBlock Meshtastic Starter Kit | Heltec V4 | Lilygo T-Beam |
 | :------- | :----------- | :-------- | :------------ |
 | Full Name | RAK4631 Core module + RAK19007 Base Board + RAK1921 OLED Display | WiFi LoRa 32 (V4), ESP32S3 + SX1262 LoRa Node, Meshtastic and LoRaWAN Compatible + L76K GNSS Module | Lilygo T-Beam Meshtastic |
@@ -60,5 +58,3 @@ graph LR
 | WiFi | No | Yes | Yes |
 | Screen | 0.96in OLED | 0.96in OLED | 0.96 OLED |
 | Est. Battery Life (3000mAh) | ~278 hrs (11 days) | ~10.7 hrs | ~18.75 hrs *Note nust use (one) 18650 cell* |
-
-

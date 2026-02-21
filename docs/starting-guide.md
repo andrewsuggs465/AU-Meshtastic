@@ -46,6 +46,8 @@ The ultimate goal is to spark innovation within the Auburn engineering community
 When choosing your Meshtastic node configuration, you can prioritize features such as connectivity (Wi-Fi, BLE), GPS, sensor integration, or display options. The choice of microcontroller (MCU) affects power consumption, performance, and expandability.
 Also consider if you want a higher-power mode with more features or a lower-power node with increased battery life but worse performance.
 
+It is recommended to consider the boards listed on the [boards page](https://andrewsuggs465.github.io/AU-Meshtastic/boards/) for your configuration.
+
 #### 1. ESP32-Based MCUs
 
 - **Examples**
