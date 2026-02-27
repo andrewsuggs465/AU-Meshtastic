@@ -8,7 +8,7 @@ edit_uri: edit/master/docs/
 
 theme:
   name: material
-  logo: assets/logos/SVG_auMesh.svg
+  logo: assets/logos/SVG_au.svg
   favicon: assets/logos/SVG_au.svg
   language: en
   features:
@@ -36,24 +36,18 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.tabbed
   - attr_list
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
 
 nav:
   - Home: index.md
   - Join: join.md
+  - Events:
+    - Meetings:
+      - 2026-03-02 — Monthly Meeting: assets/events/2026-03-02-monthly-meeting.md
+    - Previous:
+        - 2026-02-02 — Monthly Meeting: assets/events/2026-02-02-monthly-meeting.md
   - Starting Guide: starting-guide.md
   - Boards: boards.md
-  - Events:
-      - Events Home: assets/events/index.md
-      - 2026-03-02 — Monthly Meeting: assets/events/2026-03-02-monthly-meeting.md
-      - 2026-xx-xx — Build Night: assets/events/2026-xx-xx-build-night.md
-      - Previous:
-          - 2026-02-02 — Monthly Meeting: assets/events/2026-02-02-monthly-meeting.md
-  - Resources: resources.md
   - Project Hub: projects.md
+  - Resources: resources.md
   - Uploads: https://auburn.box.com/s/d4jgsr0w9i4rygxcakc5eockw36nfeiw
 

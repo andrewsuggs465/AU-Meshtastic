@@ -1,4 +1,4 @@
-# Buid Day Board Options
+# Build Day Board Options
 
 ## Option A: Wisblock Meshtastic Starter Kit
 
@@ -17,32 +17,6 @@ WiFi LoRa 32 (V4), ESP32S3 + SX1262 LoRa Node, Meshtastic and LoRaWAN Compatible
 Lilygo T-Beam Meshtastic
 
 ![Lilygo](assets/images/Lilygo.png){: width="300" }
-
-## Decision Flowchart
-
-``` mermaid
-graph LR
-  A(Which feature do I care most about?);
-  A --> B[GPS + Wifi];
-  B ---->|and| I[High Output Power]
-  I ------> G
-
-  B ---->|and| J[More Battery Life]
-  J ------> H
-
-  
-
-
-  A --> C[Long Battery Life];
-  C ------> F{Wisblock}
-
-  A --> D[High Ouptut Power];
-  D ------> G{Heltec V4}
-
-  A --> E[Small Form Factor];
-  E ------> H{Lilygo T-Beam}
-
-```
 
 ## Full Comparison
 

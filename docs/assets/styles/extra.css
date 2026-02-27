@@ -1,10 +1,12 @@
 /* ── tokens ── */
 :root {
-  --md-primary-fg-color: #00e5c0;
-  --md-accent-fg-color: #00bcd4;
-  --md-default-bg-color: #0b0f14;
-  --md-default-fg-color: #e6edf3;
-  --md-code-bg-color: #111821;
+  --primary-color: #68ea95;
+  --accent-color: #68ea73;
+  --bg-color: #1B1B1D;
+  --fg-color: #e6edf3;
+  --code-bg-color: #111821;
+  --border-color: rgba(104, 234, 149, 0.2);
+  --hover-bg: rgba(104, 234, 149, 0.1);
 
   --glow: 0 0 24px oklch(75% 0.14 175 / 0.15);
   scroll-behavior: smooth;
@@ -18,120 +20,8 @@
 
 /* ── focus ── */
 :focus-visible {
-  outline: 2px solid var(--md-primary-fg-color);
+  outline: 2px solid var(--primary-color);
   outline-offset: 3px;
-}
-
-/* ── headings ── */
-.md-typeset :is(h1, h2, h3) {
-  color: var(--md-primary-fg-color);
-  text-wrap: balance;
-}
-
-/* ── links: animated underline ── */
-.md-typeset a {
-  color: var(--md-primary-fg-color);
-  text-decoration: none;
-  background-image: linear-gradient(
-    var(--md-primary-fg-color),
-    var(--md-primary-fg-color)
-  );
-  background-size: 0% 1px;
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  transition: background-size 0.3s ease, color 0.2s ease;
-}
-
-.md-typeset a:hover {
-  color: color-mix(in oklch, var(--md-primary-fg-color), white 30%);
-  background-size: 100% 1px;
-}
-
-/* ── admonitions ── */
-.md-typeset .admonition {
-  border-left: 4px solid var(--md-primary-fg-color);
-}
-
-/* ── horizontal rules: gradient fade ── */
-.md-typeset hr {
-  border: none;
-  height: 1px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    var(--md-primary-fg-color),
-    transparent
-  );
-  opacity: 0.3;
-}
-
-/* ── code blocks: glow on hover via :has() ── */
-.md-typeset pre:has(code) {
-  transition: box-shadow 0.3s ease;
-}
-
-.md-typeset pre:has(code):hover {
-  box-shadow: var(--glow);
-}
-
-/* ── project images: clip-path + hover ── */
-.md-content img[alt="Node"] {
-  clip-path: inset(0 round 10px);
-  transition: clip-path 0.4s ease, filter 0.3s ease;
-}
-
-.md-content img[alt="Node"]:hover {
-  clip-path: inset(3% round 6px);
-  filter: brightness(1.1);
-}
-
-/* ── all images: baseline radius ── */
-.md-typeset img {
-  border-radius: 6px;
-}
-
-/* ── header logo (responsive) ── */
-.md-header .md-logo :is(img, svg) {
-  height: 48px;
-  width: auto;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/* ── sidebar github container ── */
-.md-nav__source {
-  background-color: var(--md-primary-fg-color);
-}
-
-/* ── sidebar title ── */
-.md-nav__title {
-  display: flex;           
-  align-items: center;     
-  flex-wrap: wrap;         
-}
-
-/* ── sidebar logo ── */
-.md-nav__title a.md-logo {
-  margin-right: 0.5rem;   
-  flex-shrink: 0;          
-}
-
-/* ── sidebar title ── */
-.md-nav__title > text {
-  white-space: normal;     
-  word-break: break-word;  
-  overflow-wrap: anywhere; 
-}
-
-
-@media (min-width: 40px) {
-  .md-header .md-logo :is(img, svg) {
-    height: 48px;
-  }
-}
-
-.md-header .md-header__inner {
-  align-items: center;
 }
 
 /* ── scrollbar ── */
@@ -141,7 +31,7 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: var(--md-default-bg-color);
+    background: var(--bg-color);
   }
 
   ::-webkit-scrollbar-thumb {
@@ -150,15 +40,465 @@
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--md-primary-fg-color);
+    background: var(--primary-color);
   }
 }
 
-/* ── tables: subtle hover ── */
-.md-typeset table:not([class]) tbody tr {
-  transition: background-color 0.15s ease;
+
+h1 {
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5em;
 }
 
-.md-typeset table:not([class]) tbody tr:hover {
-  background-color: oklch(20% 0.02 175 / 0.5);
+/* ── links ── */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+  position: relative;
+}
+
+a:hover {
+  color: color-mix(in oklch, var(--primary-color), white 20%);
+  text-decoration: underline;
+}
+
+/* ── paragraphs ── */
+p {
+  color: var(--fg-color);
+  line-height: 1.6;
+}
+
+/* ── buttons ── */
+button, input[type="button"], input[type="submit"], a.btn {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+button:hover, input[type="button"]:hover, input[type="submit"]:hover, a.btn:hover {
+  background-color: color-mix(in oklch, var(--primary-color), white 20%);
+  transform: translateY(-2px);
+  box-shadow: var(--glow);
+}
+
+button:active, input[type="button"]:active, input[type="submit"]:active {
+  transform: translateY(0);
+}
+
+/* ── search button override ── */
+.md-search__button {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  transform: none !important;
+}
+
+.md-search__button:hover {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* ── code blocks ── */
+code, pre {
+  background-color: var(--code-bg-color);
+  color: var(--primary-color);
+  border-radius: 4px;
+}
+
+code {
+  padding: 0.2em 0.4em;
+  font-size: 0.9em;
+}
+
+pre {
+  padding: 1em;
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  transition: box-shadow 0.3s ease;
+}
+
+pre:hover {
+  box-shadow: var(--glow);
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* ── tables ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+thead {
+  background-color: var(--hover-bg);
+  border-bottom: 2px solid var(--border-color);
+}
+
+th {
+  color: var(--primary-color);
+  padding: 0.75em;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 0.75em;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--fg-color);
+}
+
+tr:hover {
+  background-color: var(--hover-bg);
+}
+
+/* ── blockquotes ── */
+blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding-left: 1em;
+  margin-left: 0;
+  color: color-mix(in oklch, var(--fg-color), var(--bg-color) 20%);
+  font-style: italic;
+}
+
+/* ── horizontal rules ── */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--primary-color),
+    transparent
+  );
+  opacity: 0.3;
+  margin: 2em 0;
+}
+
+/* ── lists ── */
+ul, ol {
+  color: var(--fg-color);
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* ── images ── */
+img {
+  border-radius: 6px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+img:hover {
+  border-color: var(--primary-color);
+  box-shadow: var(--glow);
+}
+
+/* ── cards / article blocks ── */
+article, .card, .content-block {
+  background-color: rgba(104, 234, 149, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5em;
+  transition: all 0.3s ease;
+}
+
+article:hover, .card:hover, .content-block:hover {
+  border-color: var(--primary-color);
+  box-shadow: var(--glow);
+}
+
+/* ── admonitions ── */
+.admonition {
+  border-left: 4px solid var(--primary-color);
+  background-color: rgba(104, 234, 149, 0.05);
+  padding: 1em;
+  border-radius: 4px;
+  margin: 1em 0;
+}
+
+.admonition-title {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.admonition p {
+  margin: 0.5em 0;
+}
+
+/* ── form elements ── */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+  background-color: var(--code-bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--fg-color);
+  padding: 0.5em;
+  border-radius: 4px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(104, 234, 149, 0.1);
+}
+
+/* ── badges ── */
+.badge {
+  background-color: var(--hover-bg);
+  border: 1px solid var(--border-color);
+  color: var(--primary-color);
+  padding: 0.25em 0.75em;
+  border-radius: 12px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+/* ── Material Design theme integration ── */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--primary-color);
+  --md-accent-fg-color: var(--accent-color);
+  --md-default-bg-color: var(--bg-color);
+  --md-default-fg-color: var(--fg-color);
+  --md-code-bg-color: var(--code-bg-color);
+}
+
+/* ── header banner ── */
+.md-header {
+  background-color: var(--primary-color) !important;
+  color: white;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.md-header * {
+  color: white;
+}
+
+.md-header__title {
+  color: white;
+}
+
+.md-header__button svg {
+  color: white;
+  stroke: white;
+}
+
+.md-source {
+  color: white;
+}
+
+/* ── hide logo ── */
+.md-logo {
+  display: none;
+}
+
+/* ── remove green card box from content ── */
+article, .card, .content-block {
+  background-color: transparent;
+  border: none;
+  padding: 1.5em 0;
+  box-shadow: none;
+}
+
+article:hover, .card:hover, .content-block:hover {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+/* ── Nav labl expansion color glitch ── */
+
+.md-nav__item{
+  color: var(--primary-color);
+}
+
+/* ── event card styling ── */
+.event-card {
+  background: linear-gradient(135deg, rgba(104, 234, 149, 0.1) 0%, rgba(104, 234, 149, 0.05) 100%);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 2em;
+  margin: 2em 0;
+  box-shadow: 0 4px 12px rgba(104, 234, 149, 0.15);
+  transition: all 0.3s ease;
+}
+
+.event-card:hover {
+  border-left-color: white;
+  box-shadow: 0 8px 20px rgba(104, 234, 149, 0.25);
+}
+
+.event-card h1 {
+  color: var(--primary-color);
+}
+
+.event-card p {
+  font-size: 1.3em;
+  line-height: 2;
+}
+
+.event-detail {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.2em;
+  align-items: center;
+  color: var(--fg-color);
+  font-size: 1.4em;
+}
+
+.event-detail-label {
+  font-weight: 600;
+  color: var(--primary-color);
+  white-space: nowrap;
+}
+
+/* ── hero section ── */
+.hero {
+  text-align: center;
+  padding: 4em 2em;
+  background: linear-gradient(135deg, rgba(104, 234, 149, 0.08) 0%, rgba(104, 234, 149, 0.02) 100%);
+  border-radius: 12px;
+  margin: 2em 0 3em;
+  border: 1px solid var(--border-color);
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  background: linear-gradient(135deg, var(--primary-color), #8fffd9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: var(--fg-color);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ── action cards grid ── */
+.action-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2em;
+  margin: 2em 0;
+}
+
+.action-card {
+  background: linear-gradient(135deg, rgba(104, 234, 149, 0.12) 0%, rgba(104, 234, 149, 0.06) 100%);
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 2em;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(104, 234, 149, 0.2);
+  border-color: white;
+}
+
+.action-card-icon {
+  font-size: 3em;
+  margin-bottom: 1em;
+  display: block;
+}
+
+.action-card h3 {
+  margin-top: 0;
+  font-size: 1.4em;
+}
+
+.action-card a {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  padding: 0.7em 1.5em;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 1em;
+  transition: all 0.3s ease;
+}
+
+.action-card a:hover {
+  background-color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(104, 234, 149, 0.3);
+}
+
+/* ── info grid ── */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  margin: 2em 0;
+}
+
+.info-card {
+  background: rgba(104, 234, 149, 0.05);
+  border-left: 4px solid var(--primary-color);
+  padding: 1.5em;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  background: rgba(104, 234, 149, 0.1);
+  box-shadow: 0 4px 12px rgba(104, 234, 149, 0.15);
+}
+
+.info-card h4 {
+  margin-top: 0;
+  color: var(--primary-color);
+  font-size: 1.2em;
+}
+
+.info-card ul {
+  margin-bottom: 0;
+  font-size: 0.95em;
+}
+
+/* ── section divider ── */
+.section {
+  margin: 1em;
+  padding: 1em;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.section h2 {
+  font-size: 2em;
+  margin-bottom: 1.5em;
+  padding-bottom: 0.5em;
 }
