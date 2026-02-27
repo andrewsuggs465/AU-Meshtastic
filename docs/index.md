@@ -1,7 +1,7 @@
-<h1>Auburn University Mesh Club</h1>
+# Auburn University Mesh Club
 <div class="hero">
 <p>
-A student-led organization exploring LoRa, mesh networking, and project-based learning at Auburn University.
+A student-led organization exploring LoRa, mesh networking, SDR, and project-based learning at Auburn University.
 </p>
 </div>
 
@@ -12,6 +12,13 @@ A student-led organization exploring LoRa, mesh networking, and project-based le
 <h3>Getting Started</h3>
 <p>Learn the fundamentals of Meshtastic and get up to speed</p>
 <a href="starting-guide">Read Guide</a>
+</div>
+
+<div class="action-card">
+<span class="action-card-icon">📻</span>
+<h3>Selection Guide</h3>
+<p>Choose your build!</p>
+<a href="boards">Read Guide</a>
 </div>
 
 <div class="action-card">
@@ -130,10 +137,10 @@ We are an interdisciplinary student organization dedicated to bringing mesh netw
 <h1>Our Outreach Plans</h1>
 
 <ul>
-<li>🎪 <strong>Haley Concourse & E-Day Tabling</strong> - Showcase our projects and recruit new members</li>
-<li>🎥 <strong>Public Demonstrations</strong> - Demos in Auburn and Opelika communities</li>
-<li>📺 <strong>Intro Workshops</strong> - Educational sessions on radio and mesh networking fundamentals</li>
-<li>🌍 <strong>Regional Network</strong> - Build a community-supported mesh that anyone can learn from</li>
+<li><strong>Haley Concourse & E-Day Tabling</strong> - Showcase our projects and recruit new members</li>
+<li><strong>Public Demonstrations</strong> - Demos in Auburn and Opelika communities</li>
+<li><strong>Intro Workshops</strong> - Educational sessions on radio and mesh networking fundamentals</li>
+<li><strong>Regional Network</strong> - Build a community-supported mesh that anyone can learn from</li>
 </ul>
 
 </div>

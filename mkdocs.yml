@@ -40,7 +40,8 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Join: join.md
-  - Events:
+  - Events: 
+    - Calendar: events.md
     - Meetings:
       - 2026-03-02 — Monthly Meeting: assets/events/2026-03-02-monthly-meeting.md
     - Previous:

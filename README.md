@@ -50,4 +50,3 @@ The repository includes a GitHub Actions workflow that automatically deploys the
 
 3. GitHub Actions will automatically deploy the `site/` folder to GitHub Pages.
 
-4. Your site will be available at `https://<username>.github.io/<repo-name>`

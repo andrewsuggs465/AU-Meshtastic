@@ -1,38 +1,71 @@
 # Join Us
 
-We’re a fast-growing group of students who enjoy building, experimenting, and learning together.
-
-## If You Like
-
-- Hardware that actually does something
-- Radios, antennas, or networking
-- Open-source projects and development
-- Learning by doing (and breaking)
-
-—you'll fit right in.
-
-## Who Can Join?
-
-- Auburn University Students
-- Any major, any experience level
-- No prior RF or embedded knowledge required
-
 ## How to Get Involved
-
-- 💬 Join our [Discord](https://discord.gg/PmmSCSw7Dn)!
-- 📅 Come to a meeting or build night
-- 📝 Sign up through AUInvolve
-- 🛠️ Build your first Meshtastic node
 
 You can be as casual or involved as you want.
 
+<div class="action-cards">
+<div class="action-card">
+<span class="action-card-icon">💬</span>
+<h3>Join Discord</h3>
+<p>Connect with the community and stay in the loop</p>
+<a href="https://discord.gg/PmmSCSw7Dn">Join Now</a>
+</div>
+
+<div class="action-card">
+<span class="action-card-icon">📅</span>
+<h3>Attend Events</h3>
+<p>Come to a meeting or build night</p>
+<a href="#community-events">See Events</a>
+</div>
+
+<div class="action-card">
+<span class="action-card-icon">📝</span>
+<h3>Sign Up</h3>
+<p>Register through AUInvolve</p>
+<a href="#">Get Started</a>
+</div>
+
+<div class="action-card">
+<span class="action-card-icon">🛠️</span>
+<h3>Build a Node</h3>
+<p>Create your first Meshtastic device</p>
+<a href="/starting-guide/">Learn More</a>
+</div>
+</div>
+
 ## Community Events
 
-Not an AU student? No problem.
+Not an AU student? No problem—we welcome everyone!
 
-### We plan to host
+### Upcoming & Planned Events
 
-- Community build nights
-- Public demos
-- Intro workshops
-- Community centered projects
+<div class="action-cards">
+<div class="action-card">
+<span class="action-card-icon">🔧</span>
+<h3>Build Nights</h3>
+<p>Hands-on sessions to create and tinker with Meshtastic nodes</p>
+<a href="#calendar">View Calendar</a>
+</div>
+
+<div class="action-card">
+<span class="action-card-icon">📡</span>
+<h3>Public Demos</h3>
+<p>See Meshtastic in action and learn how it works</p>
+<a href="#calendar">View Calendar</a>
+</div>
+
+<div class="action-card">
+<span class="action-card-icon">📚</span>
+<h3>Intro Workshops</h3>
+<p>Learn the basics of RF, networks, and open-source</p>
+<a href="#calendar">View Calendar</a>
+</div>
+
+<div class="action-card">
+<span class="action-card-icon">🌐</span>
+<h3>Community Projects</h3>
+<p>Collaborate on larger initiatives with other makers</p>
+<a href="/projects/">See Projects</a>
+</div>
+</div>
