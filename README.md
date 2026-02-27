@@ -32,9 +32,15 @@ A student-led community exploring Meshtastic, LoRa, and mesh networking at Aubur
 
 #### Automatic Deployment with GitHub Actions (Recommended)
 
-The repository includes a GitHub Actions workflow that automatically builds and deploys the site to GitHub Pages when you push to `main` or `master`.
+The repository includes a GitHub Actions workflow that automatically deploys the `site/` folder to GitHub Pages when you push changes.
 
-1. Commit and push your changes:
+1. Build the site locally:
+
+   ```bash
+   zensical build
+   ```
+
+2. Commit and push your changes (including the updated `site/` folder):
 
    ```bash
    git add .
@@ -42,31 +48,6 @@ The repository includes a GitHub Actions workflow that automatically builds and 
    git push origin main
    ```
 
-2. GitHub Actions will automatically:
-   - Build the site with Zensical
-   - Deploy to GitHub Pages
+3. GitHub Actions will automatically deploy the `site/` folder to GitHub Pages.
 
-3. Your site will be available at `https://<username>.github.io/<repo-name>`
-
-#### Manual Deployment
-
-If you prefer to deploy manually:
-
-1. Build the static site:
-
-   ```bash
-   zensical build
-   ```
-
-2. Commit and push the `site/` directory:
-
-   ```bash
-   git add site/
-   git commit -m "Build site"
-   git push origin main
-   ```
-
-3. Configure GitHub Pages in repository **Settings** → **Pages**:
-   - Set **Source** to "Deploy from a branch"
-   - Select the branch and **`/site`** folder
-   - Click **Save**
+4. Your site will be available at `https://<username>.github.io/<repo-name>`

@@ -30,17 +30,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
-
-      - name: Install Zensical
-        run: pip install zensical
-
-      - name: Build site
-        run: zensical build
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
