@@ -14,55 +14,42 @@ A student-led community exploring Meshtastic, LoRa, and mesh networking at Aubur
    source venv/bin/activate
    ```
 
-3. Install dependencies:
+3. Install Zensical (static site generator):
 
    ```bash
-   pip install mkdocs mkdocs-material pymdown-extensions
+   pip install zensical
    ```
 
 4. Serve the docs locally:
 
    ```bash
-   mkdocs serve
+   zensical serve
    ```
 
    Then open <http://127.0.0.1:8000>
 
 ### Deployment
 
-Deploy to GitHub Pages:
+#### Deploy to GitHub Pages
 
-```bash
+1. Build the static site:
 
-mkdocs gh-deploy -f mkdocs.yml --clean
-```
+   ```bash
+   zensical build
+   ```
 
-## Events
+2. Push the generated `site/` directory to your GitHub repository:
 
-index.md
+   ```bash
+   git add site/
+   git commit -m "Build site"
+   git push origin main
+   ```
 
-This page lists upcoming meetings, workshops, and social events. Add each event as a separate markdown file under `docs/events/` so it appears as its own module.
+3. Configure GitHub Pages:
+   - Go to your repository **Settings** → **Pages**
+   - Set **Source** to "Deploy from a branch"
+   - Select **main** branch and **/root** folder (or the folder containing your built site)
+   - Click **Save**
 
-## Upcoming
-
-- [2026-02-12 — Weekly Build Night](2026-02-12-weekly-build-night.md) — 18:00 — SPARC Lab
-
----
-
-## How to add an event
-
-1. Create a file at `docs/events/YYYY-MM-DD-slug.md`.
-2. Add a short frontmatter block (optional) followed by details.
-3. Update `docs/events/index.md` to link to the new event.
-
-Example filename: `docs/events/2026-03-01-kickoff.md`.
-
-2026-02-12-weekly-build-night.md
-
-\# 2026-02-12 — Weekly Build Night *EXAMPLE*
-
-- **Time:** 18:00 — 20:00
-- **Location:** SPARC Lab (MEB 123)
-- **Organizer:** Andrew
-
-Join us for a hands-on session focused on flashing firmware, assembling WisBlock nodes, and introductory RF topics. Bring your device or just come to learn.
+The site will be deployed to `https://<username>.github.io/<repo-name>`
