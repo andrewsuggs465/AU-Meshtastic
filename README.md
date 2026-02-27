@@ -30,7 +30,27 @@ A student-led community exploring Meshtastic, LoRa, and mesh networking at Aubur
 
 ### Deployment
 
-#### Deploy to GitHub Pages
+#### Automatic Deployment with GitHub Actions (Recommended)
+
+The repository includes a GitHub Actions workflow that automatically builds and deploys the site to GitHub Pages when you push to `main` or `master`.
+
+1. Commit and push your changes:
+
+   ```bash
+   git add .
+   git commit -m "Update content"
+   git push origin main
+   ```
+
+2. GitHub Actions will automatically:
+   - Build the site with Zensical
+   - Deploy to GitHub Pages
+
+3. Your site will be available at `https://<username>.github.io/<repo-name>`
+
+#### Manual Deployment
+
+If you prefer to deploy manually:
 
 1. Build the static site:
 
@@ -38,7 +58,7 @@ A student-led community exploring Meshtastic, LoRa, and mesh networking at Aubur
    zensical build
    ```
 
-2. Push the generated `site/` directory to your GitHub repository:
+2. Commit and push the `site/` directory:
 
    ```bash
    git add site/
@@ -46,10 +66,7 @@ A student-led community exploring Meshtastic, LoRa, and mesh networking at Aubur
    git push origin main
    ```
 
-3. Configure GitHub Pages:
-   - Go to your repository **Settings** → **Pages**
+3. Configure GitHub Pages in repository **Settings** → **Pages**:
    - Set **Source** to "Deploy from a branch"
-   - Select **main** branch and **/root** folder (or the folder containing your built site)
+   - Select the branch and **`/site`** folder
    - Click **Save**
-
-The site will be deployed to `https://<username>.github.io/<repo-name>`
